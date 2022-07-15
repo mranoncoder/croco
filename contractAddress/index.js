@@ -1,0 +1,4 @@
+export const crocoKingStakingContractAddress = '0x01D7d19B9CbC7E5c9ca6Cc3A0AF1d1A8CeC90A99'
+export const crocoKingLegendaryContractAddress = '0x4a04807De33fc80a38388baF60f78e4be94B58B7'
+export const USDTContractAddress = '0x29efFeB55b21d86765327626966A85CdB2719307'
+

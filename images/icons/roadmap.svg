@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="50.006" height="50.007" viewBox="0 0 50.006 50.007">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: url(#linear-gradient);
+      }
+
+      .cls-2 {
+        fill: #fff;
+      }
+    </style>
+    <linearGradient id="linear-gradient" x1="0.5" x2="0.5" y2="1" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#979797"/>
+      <stop offset="1" stop-color="#292929"/>
+    </linearGradient>
+  </defs>
+  <g id="icons8_road" transform="translate(2.856 -3.343) rotate(7)">
+    <path id="Path_24" data-name="Path 24" class="cls-1" d="M47.825,39.569,44.5,9.654A7.479,7.479,0,0,0,37.068,3H13.8A7.479,7.479,0,0,0,6.37,9.654L3.047,39.569a7.476,7.476,0,0,0,7.431,8.3H40.394A7.476,7.476,0,0,0,47.825,39.569Z" transform="translate(0)"/>
+    <path id="Path_25" data-name="Path 25" class="cls-2" d="M11,28.465V18.493a2.493,2.493,0,0,1,4.986,0v9.972Z" transform="translate(11.943 19.408)"/>
+    <path id="Path_26" data-name="Path 26" class="cls-2" d="M15.986,3V7.986a2.493,2.493,0,0,1-4.986,0V3Z" transform="translate(11.943)"/>
+    <path id="Path_27" data-name="Path 27" class="cls-2" d="M11,20.465V10.493a2.493,2.493,0,0,1,4.986,0v9.972a2.493,2.493,0,0,1-4.986,0Z" transform="translate(11.943 7.465)"/>
+  </g>
+</svg>

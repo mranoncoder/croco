@@ -1,0 +1,21 @@
+@import "styles/variables";
+@import "styles/shared";
+
+.UniswapMarketButton {
+  @extend .ButtonWithIcon;
+
+  display: block;
+  background: none;
+  border: 2px solid #50adff;
+  color: #50adff;
+
+  &:hover {
+    color: #50adff;
+    background: transparentize(#50adff, .9);
+  }
+  &:active {
+    background: none;
+    color: #50adff;
+    border-color: darken(#50adff, 30);
+  }
+}

@@ -1,0 +1,19 @@
+@import "styles/variables";
+
+.Earn {
+  padding: 8rem 2em 4em;
+  max-width: 1200px;
+  margin: auto;
+
+  @media screen and (max-width: 1200px) {
+    font-size: .9em;
+  }
+
+  @media screen and (max-width: 1100px) {
+    font-size: .8em;
+  }
+
+  @media screen and (max-width: 992px) {
+    font-size: 1em;
+  }
+}

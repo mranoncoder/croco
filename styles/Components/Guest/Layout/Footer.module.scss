@@ -1,0 +1,34 @@
+@import "styles/variables";
+
+.Footer {
+  text-align: center;
+  position: relative;
+  padding: 1em;
+  display: flex;
+  flex-direction: column;
+  > div {
+    margin-bottom: 1em;
+  }
+
+  .DesignerNote {
+    i {
+      color: $red;
+    }
+    a {
+      color: darken($primary, 10);
+      &:hover {
+        color: $primary;
+      }
+    }
+  }
+
+  &:after {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: -2px;
+    height: 2px;
+    background: linear-gradient(to left, $white, transparent);
+  }
+}

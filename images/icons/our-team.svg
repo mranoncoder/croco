@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="54.52" height="42.937" viewBox="0 0 54.52 42.937">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #fff;
+      }
+
+      .cls-2 {
+        fill: url(#linear-gradient);
+      }
+    </style>
+    <linearGradient id="linear-gradient" x1="0.5" x2="0.5" y2="1" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#979797"/>
+      <stop offset="1" stop-color="#292929"/>
+    </linearGradient>
+  </defs>
+  <g id="icons8_people_1" transform="translate(-1.928 1.201) rotate(-7)">
+    <path id="Path_30" data-name="Path 30" class="cls-1" d="M29.195,13H13.065a8.065,8.065,0,0,0,0,16.13h16.13a8.065,8.065,0,1,0,0-16.13Z" transform="translate(5.217 13.043)"/>
+    <path id="Path_31" data-name="Path 31" class="cls-1" d="M45.933,15H6.761a5.761,5.761,0,0,0,0,11.521H45.933a5.761,5.761,0,1,0,0-11.521Z" transform="translate(0 15.651)"/>
+    <ellipse id="Ellipse_20" data-name="Ellipse 20" class="cls-2" cx="9.5" cy="9" rx="9.5" ry="9" transform="translate(16.694 3.172)"/>
+    <circle id="Ellipse_21" data-name="Ellipse 21" class="cls-2" cx="7" cy="7" r="7" transform="translate(37.694 10.172)"/>
+    <circle id="Ellipse_22" data-name="Ellipse 22" class="cls-2" cx="7" cy="7" r="7" transform="translate(0.694 10.172)"/>
+  </g>
+</svg>

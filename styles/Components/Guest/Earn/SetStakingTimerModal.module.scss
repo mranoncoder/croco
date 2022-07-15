@@ -1,0 +1,13 @@
+@import "styles/variables";
+
+.SetStakingTimerModal {
+  width: 500px;
+  max-width: 100%;
+  h5 {
+    margin-bottom: .5em;
+  }
+  .TipContainer {
+    margin: 1em 0 2em;
+    color: $green-500;
+  }
+}

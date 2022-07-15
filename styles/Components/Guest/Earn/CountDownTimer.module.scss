@@ -1,0 +1,27 @@
+@import "styles/variables";
+
+.Timer {
+  display: flex;
+  > span {
+    display: flex;
+    flex-direction: column;
+    height: 60px;
+    padding: 0.5em;
+    width: 100%;
+
+    > span {
+      background: lighten($blue, 15);
+      color: $white;
+      text-align: center;
+      padding: .7em;
+      border-radius: .5em;
+      margin-bottom: .5em;
+    }
+    > label {
+      margin: auto;
+      font-size: .6em;
+      font-weight: 300;
+      color: $white;
+    }
+  }
+}

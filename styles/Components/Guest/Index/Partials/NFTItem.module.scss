@@ -1,0 +1,18 @@
+@import "styles/variables";
+
+.Item {
+  position: relative;
+  border-radius: 25px;
+  overflow: hidden;
+  line-height: 0;
+
+  h3 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: linear-gradient(to top, black, transparent);
+    margin: 0;
+    padding: 0.5em;
+  }
+}

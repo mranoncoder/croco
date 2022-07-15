@@ -1,0 +1,56 @@
+@import "styles/variables";
+@import "styles/shared";
+
+.SelectBox {
+  position: relative;
+  border: 2px solid $gray-600;
+  padding: 1em;
+  border-radius: .5em;
+  cursor: pointer;
+  color: $gray-600;
+  line-height: 18px;
+  transition: all .3s ease-in;
+
+  &:hover {
+    color: darken($primary, 20);
+    border-color: darken($primary, 20);
+  }
+
+  &.Active {
+    color: $primary;
+    border-color: $primary;
+  }
+
+  label {
+    cursor: pointer;
+  }
+
+  .Options {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: calc(100% + 10px);
+    background: $gray-800;
+    padding: 1em;
+    z-index: 100001;
+    border-radius: .5em;
+    box-shadow: 0 0 2em $dark;
+
+    .Option {
+      padding: .8em;
+      border-radius: .3em;
+
+      > span {
+        color: $white;
+        + span {
+          color: $primary;
+          float: right;
+        }
+      }
+
+      &:hover {
+        background: $gray-700;
+      }
+    }
+  }
+}

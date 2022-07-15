@@ -1,0 +1,149 @@
+@import "styles/variables";
+
+.Header {
+  position: fixed;
+  margin: auto;
+  z-index: 1000;
+  left: 0;
+  top: 0;
+  right: 0;
+  width: 100%;
+  max-width: 1840px;
+  padding: 1em 2em;
+  background-color: transparentize($color: $dark, $amount: 0.78); // #12121238;
+  backdrop-filter: blur(50px);
+
+  .Socials {
+    margin: auto 0;
+    text-align: right;
+  }
+
+  .Toggler {
+    background-color: $black;
+    border: 1px solid $gray-800;
+    border-radius: 4px;
+    padding: 0;
+    display: inline-block;
+    width: 40px;
+    height: 35px;
+    position: relative;
+    @media screen and (min-width: 992px) {
+      display: none;
+    }
+
+    span {
+      background-color: $gray-300;
+      height: 2px;
+      width: 70%;
+      display: inline-block;
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+      margin-top: -8px;
+      & + span {
+        margin-top: 0;
+        & + span {
+          margin-top: 8px;
+        }
+      }
+    }
+  }
+
+  .Logo {
+    margin-left: 0;
+    > div > div {
+      align-self: center;
+    }
+    img {
+      min-width: 40px;
+      height: auto;
+    }
+  }
+
+  .Nav {
+    margin: auto;
+    text-align: center;
+  }
+
+  .CloseContainer {
+    display: none;
+  }
+
+  @media screen and (max-width: 991px) {
+    .NavContainer {
+      position: fixed;
+      z-index: 1;
+      background-color: black;
+      backdrop-filter: blur(50px);
+      flex-direction: column;
+      width: 100%;
+      max-width: 300px;
+      height: 100vh !important;
+      left: -300px;
+      bottom: 0;
+      top: 0;
+      right: auto;
+      overflow-y: auto;
+      overflow-x: hidden;
+      border-right: 1px groove gray;
+
+      transition: all 0.4s ease-in;
+      &.Open {
+        left: 0;
+      }
+
+      .CloseContainer {
+        display: block;
+      }
+
+      .Close {
+        display: inline-block;
+        position: absolute;
+        background-color: transparent;
+        top: 10px;
+        right: 10px;
+        border: none;
+        color: $white;
+      }
+
+      .Logo,
+      .Socials,
+      .Nav {
+        margin: 0.5em auto 0.5em auto;
+      }
+      .Nav {
+        margin-left: 0;
+        margin-right: auto;
+        nav {
+          text-align: left;
+          ul {
+            flex-direction: column;
+            margin-left: 1em;
+            margin-top: 2em;
+
+            li {
+              margin-bottom: 1em;
+            }
+          }
+        }
+      }
+      .Socials {
+        margin-top: auto;
+        margin-bottom: 0;
+        border-top: 1px groove gray;
+        text-align: center;
+      }
+    }
+  }
+
+  &:after {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: -2px;
+    height: 2px;
+    background: linear-gradient(to right, $white, transparent);
+  }
+}

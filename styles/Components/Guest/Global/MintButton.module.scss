@@ -1,0 +1,22 @@
+@import "styles/variables";
+@import "styles/shared";
+
+.MintButton {
+  @extend .ButtonWithIcon;
+
+  background-image: linear-gradient(to bottom, #00af2f, #006116);
+  &:hover {
+    background-image: linear-gradient(
+                    to bottom,
+                    lighten(#00af2f, 5),
+                    lighten(#006116, 5)
+    );
+  }
+  &:active {
+    background-image: linear-gradient(
+                    to bottom,
+                    darken(#00af2f, 5),
+                    darken(#006116, 5)
+    );
+  }
+}

@@ -1,0 +1,76 @@
+@import "styles/variables";
+
+.Nav {
+  ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    display: inline-flex;
+    flex-direction: row;
+
+    li {
+      margin: 0 0.75em;
+
+      a,
+      button {
+        font-size: 18px;
+        font-weight: 500;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        color: #ffffff;
+        position: relative;
+        padding: 0.25em;
+        display: inline-block;
+        line-height: normal;
+
+        &:after,
+        &:before {
+          content: "";
+          height: 2px;
+          background-color: $primary;
+          position: absolute;
+          bottom: 0;
+          left: 0;
+          transition: right 0.3s cubic-bezier(0.215, 0.61, 0.355, 1),
+            background-color 0.3s ease-in;
+          right: 100%;
+          opacity: 0;
+        }
+        &:before {
+          right: 0;
+          left: 100%;
+          opacity: 1;
+          transition: left 0.3s cubic-bezier(0.215, 0.61, 0.355, 1),
+            background-color 0.3s ease-in;
+        }
+        &:hover,
+        &.Active {
+          color: $primary;
+          transition: color 0.3s ease-out;
+          &:before {
+            opacity: 0;
+            background-color: $white;
+          }
+        }
+        &:hover {
+          &:before {
+            left: 0;
+          }
+          &:after {
+            right: 0;
+            opacity: 1;
+          }
+        }
+        &.Active:hover {
+          &:after {
+            right: 100%;
+          }
+        }
+      }
+
+      ul {
+        display: none;
+      }
+    }
+  }
+}

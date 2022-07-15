@@ -1,0 +1,12 @@
+@import "styles/variables";
+
+.Team {
+  position: relative;
+  text-align: center;
+  padding: 6em 1em 1em;
+
+  .TeamMembers {
+    justify-content: center;
+    align-items: center;
+  }
+}

@@ -1,0 +1,9 @@
+@import "styles/variables";
+
+.PercentageItem {
+  position: absolute;
+  line-height: 0;
+  color: $white;
+  left: 50%;
+  transform: translateX(-50%);
+}

@@ -1,0 +1,125 @@
+@import "styles/variables";
+
+.Social {
+  color: $white;
+  width: 100%;
+  height: calc(20vw - 2em);
+  @media screen and (max-width: 767px) {
+    height: calc(40vw - 2em);
+  }
+  margin-bottom: 1em;
+  max-height: calc(320px - 2em);
+  border-radius: 25px;
+  background: linear-gradient(to right, #50adff, #03457e);
+  display: flex;
+  transition: all 0.3s;
+  &:hover {
+    transform: scale(1.05);
+    color: $white;
+  }
+  .ImageContainer {
+    margin-left: auto;
+    width: calc(40% - 2em);
+    text-align: right;
+    padding: 1em 1em 1em 0;
+    position: relative;
+    line-height: 0;
+  }
+  .NoteContainer {
+    text-align: left;
+    margin-right: auto;
+    padding: 0.8em 0 0.8em 0.8em;
+    width: 60%;
+    position: relative;
+    font-size: 3em;
+    h3 {
+      margin: 0;
+    }
+    strong {
+      display: block;
+    }
+    .Chevron {
+      position: absolute;
+      bottom: 0.5em;
+      left: 0.8em;
+      display: inline-block;
+      width: 1.5em;
+      height: 1.5em;
+      background-color: transparentize($white, 0.7);
+      border-radius: 10px;
+      i {
+        font-size: 0.75em;
+        line-height: normal;
+        position: absolute;
+        width: 35%;
+        height: 50%;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+    }
+    @media screen and (min-width: 1400px) {
+      &,
+      h3 {
+        font-size: 2.7rem;
+      }
+    }
+    @media screen and (max-width: 1400px) {
+      &,
+      h3 {
+        font-size: 2.5rem;
+      }
+    }
+    @media screen and (max-width: 1300px) {
+      &,
+      h3 {
+        font-size: 2rem;
+      }
+    }
+    @media screen and (max-width: 991px) {
+      &,
+      h3 {
+        font-size: 1.5rem;
+      }
+    }
+    @media screen and (max-width: 767px) {
+      &,
+      h3 {
+        font-size: 2.4rem;
+      }
+    }
+    @media screen and (max-width: 580px) {
+      &,
+      h3 {
+        font-size: 2rem;
+      }
+    }
+    @media screen and (max-width: 490px) {
+      &,
+      h3 {
+        font-size: 1.7rem;
+      }
+    }
+    @media screen and (max-width: 420px) {
+      &,
+      h3 {
+        font-size: 1.4rem;
+      }
+    }
+    @media screen and (max-width: 350px) {
+      &,
+      h3 {
+        font-size: 1.2rem;
+      }
+    }
+  }
+  &.Instagram {
+    background: linear-gradient(to right, #e54842, #62026a);
+  }
+  &.Twitter {
+    background: linear-gradient(to right, #00e2ec, #00575b);
+  }
+  &.Discord {
+    background: linear-gradient(to right, #625bc7, #312c7a);
+  }
+}

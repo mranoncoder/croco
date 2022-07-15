@@ -1,0 +1,102 @@
+@import "styles/variables";
+
+.Intro {
+  padding: 10rem 2rem;
+  position: relative;
+  @media screen and (max-width: 1400px) {
+    padding-bottom: 4em;
+  }
+
+  @media screen and (max-width: 800px) {
+    padding-bottom: 0;
+  }
+
+  .Background {
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+
+    .CrocodileImage {
+      position: absolute;
+      right: 0;
+      top: 6em;
+    }
+
+    .TopClouds {
+      position: absolute;
+      left: -10em;
+      top: -10em;
+      transform: rotate(120deg);
+    }
+
+    .Blurs {
+      position: absolute;
+      left: 0;
+      top: 0;
+      bottom: 0;
+      right: 0;
+      transform: rotate(180deg);
+    }
+
+    @media screen and (max-width: 1200px) {
+      opacity: 0.5;
+    }
+  }
+
+  .DescriptionContainer {
+    display: flex;
+    flex-direction: column;
+    max-width: 40vw;
+
+    @media screen and (min-width: 1840px) {
+      max-width: calc(1840px / 2);
+    }
+
+    &,
+    * {
+      z-index: 5;
+    }
+    h1 {
+      font-size: 8vw;
+      color: $white;
+      font-weight: normal;
+      line-height: 0.9;
+      margin-bottom: 0.3em;
+
+      @media screen and (min-width: 1840px) {
+        font-size: 150px;
+      }
+
+      span {
+        font-weight: 300;
+        display: block;
+      }
+    }
+    p {
+      font-size: 1.1em;
+      font-weight: 300;
+      @media screen and (min-width: 1200px) {
+        padding: 0 !important;
+      }
+    }
+
+    @media screen and (max-width: 1200px) {
+      max-width: 100vw;
+      text-align: center;
+      h1 {
+        font-size: 4em;
+      }
+      p {
+        color: $gray-100;
+      }
+    }
+
+    @media screen and (max-width: 400px) {
+      h1 {
+        font-size: 3em;
+      }
+    }
+  }
+}

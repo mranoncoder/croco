@@ -1,0 +1,88 @@
+@import "styles/variables";
+
+.Button {
+  display: block;
+  width: 100%;
+  padding: 0.8em;
+  border-radius: 10px;
+  border: none;
+  color: $white;
+  font-size: 1.2em;
+  font-weight: 600;
+  line-height: normal;
+  text-align: center;
+
+  &:hover {
+    color: $white;
+  }
+
+  &:disabled {
+    background: transparentize($gray-500, .8);
+    color: $gray-500;
+    &:hover, &:active {
+      color: $gray-500;
+      background: transparentize($gray-500, .8);
+    }
+  }
+}
+
+.ButtonWithIcon {
+  @extend .Button;
+
+  > span {
+    position: relative;
+    padding-left: 1.7em;
+    display: block;
+    > img,
+    > span {
+      position: absolute !important;
+      left: 0;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+  }
+}
+
+.BlueButton {
+  @extend .Button;
+  font-size: 17px;
+  padding: 20px;
+  display: block;
+  background-image: linear-gradient(to bottom, #50adff, #005baa);
+  &:hover {
+    background-image: linear-gradient(
+                    to bottom,
+                    lighten(#50adff, 5),
+                    lighten(#005baa, 5)
+    );
+  }
+  &:active {
+    background-image: linear-gradient(
+                    to bottom,
+                    darken(#50adff, 5),
+                    darken(#005baa, 5)
+    );
+  }
+}
+
+.PinkButton {
+  @extend .Button;
+  font-size: 17px;
+  padding: 20px;
+  display: block;
+  background-image: linear-gradient(to bottom, #FF50A8, #AA004F);
+  &:hover {
+    background-image: linear-gradient(
+                    to bottom,
+                    lighten(#FF50A8, 5),
+                    lighten(#AA004F, 5)
+    );
+  }
+  &:active {
+    background-image: linear-gradient(
+                    to bottom,
+                    darken(#FF50A8, 5),
+                    darken(#AA004F, 5)
+    );
+  }
+}

@@ -1,0 +1,86 @@
+@import "variables";
+@import "bootstrap";
+
+@import "fonts/index.scss";
+
+@import "nprogress";
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  background-color: $dark;
+  font-family: "Campton", $font-family-sans-serif;
+  color: $gray-300;
+  font-size: 1rem;
+  line-height: normal;
+}
+
+::-webkit-scrollbar-thumb {
+  background: transparentize($primary, 0.4);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-track {
+  background: linear-gradient(to left, black, white, black);
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+#__next {
+  max-width: 1840px;
+  overflow: hidden;
+  margin: auto;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+button.link {
+  -webkit-appearance: none;
+  background: none;
+  border: 0;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  color: #03678b;
+  cursor: pointer;
+  display: inline;
+  font-size: inherit;
+  margin: 0;
+  padding: 0;
+  text-align: left;
+  text-decoration: none;
+}
+
+.button-link {
+  background-color: transparent;
+  border: 1px solid $primary;
+  padding: 1em;
+  text-transform: uppercase;
+  color: $white;
+}
+
+footer ul {
+  @media screen and (max-width: 510px) {
+    display: block !important;
+    li {
+      display: inline-block !important;
+    }
+  }
+}
+
+.rtl {
+  direction: rtl;
+}
+
+.ltr {
+  direction: ltr;
+}

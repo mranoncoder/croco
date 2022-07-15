@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="41" height="41" viewBox="0 0 41 41">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: url(#linear-gradient);
+      }
+
+      .cls-2 {
+        fill: #fff;
+      }
+    </style>
+    <linearGradient id="linear-gradient" x1="0.5" x2="0.5" y2="1" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#979797"/>
+      <stop offset="1" stop-color="#292929"/>
+    </linearGradient>
+  </defs>
+  <g id="icons8_info_7" transform="translate(-1.943 -2.415)">
+    <circle id="Ellipse_35" data-name="Ellipse 35" class="cls-1" cx="20.5" cy="20.5" r="20.5" transform="translate(1.943 2.415)"/>
+    <path id="Path_79" data-name="Path 79" class="cls-2" d="M11,23.425V13.071A2.072,2.072,0,0,1,13.071,11h0a2.072,2.072,0,0,1,2.071,2.071V23.425A2.072,2.072,0,0,1,13.071,25.5h0A2.072,2.072,0,0,1,11,23.425Z" transform="translate(9.636 9.636)"/>
+    <circle id="Ellipse_36" data-name="Ellipse 36" class="cls-2" cx="3.106" cy="3.106" r="3.106" transform="translate(19.601 10.282)"/>
+  </g>
+</svg>

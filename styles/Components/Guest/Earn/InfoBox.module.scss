@@ -1,0 +1,29 @@
+@import "styles/variables";
+
+.InfoBox {
+  background: transparentize($light, .9);
+  padding: 2em 1.5em;
+  border-radius: 1.5em;
+  font-size: 1.1em;
+
+  div {
+    color: $light;
+    margin-bottom: .5em;
+    display: flex;
+    justify-content: space-between;
+
+    span {
+      color: $gray-600;
+      margin-right: 0.5em;
+    }
+
+    label {
+      margin-bottom: 0;
+      margin-top: auto;
+    }
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+}

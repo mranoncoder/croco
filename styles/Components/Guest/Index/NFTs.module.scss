@@ -1,0 +1,12 @@
+@import "styles/variables";
+
+.NFTs {
+  position: relative;
+  text-align: center;
+  padding: 6em 1em 1em;
+
+  > div {
+    max-width: 1200px;
+    margin: auto;
+  }
+}

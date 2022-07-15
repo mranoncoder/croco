@@ -1,0 +1,26 @@
+@import "styles/variables";
+
+.TabBar {
+  display: flex;
+  margin-bottom: 2em;
+
+  .TabItem {
+    text-transform: uppercase;
+    padding: .5em 1em;
+    font-size: 1.3em;
+    color: $gray-600;
+    border-bottom: 2px solid $gray-600;
+    user-select: none;
+    transition: all .3s ease-in;
+
+    &:hover {
+      color: darken($primary, 20);
+      border-color: darken($primary, 20);
+    }
+
+    &.Active {
+      color: $primary;
+      border-color: $primary;
+    }
+  }
+}
